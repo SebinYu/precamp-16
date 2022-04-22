@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div {
+            width: 80px;
+            height: 80px;
+            border: 2px solid red;
+            padding: 15px;
+        }
+        
+        .box {
+            width: 600px;
+            height: 600px;
+            display: flex;/*flex 부모자식 태그 묶기+활용 선언*/
+            flex-direction: column; /*수직*/
+            align-items: center; /*가운데로 가져오기: ㅡ*/ 
+            justify-content: center; /* 가운데로 가져오기2: ㅣ */
+        }
+
+        /* #id 형식으로 불러오고 - 위에서 선언한 div 설정을 적용
+        #borderbox {
+            box-sizing: border-box;
+        }
+
+        #contentbox {
+            box-sizing: border-box;
+        } */
+    </style>
+</head>
+<body>
+    <!-- alt + 화살표 : 태그 묶어서 위아래 이동  -->
+    <!-- 부모박스, 자식박스 설정 -->
+    <div>박스 1</div>
+    <div class="box">
+        <div>박스 2</div>
+        <div>박스 3</div>
+        <div>박스 4</div>
+    </div>
+    <div>박스 5</div>
+
+</body>
+</html>

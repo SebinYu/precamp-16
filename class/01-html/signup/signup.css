@@ -1,0 +1,110 @@
+/* 아래와 같이 설정해야 회원가입 박스 내용물이 박스안에 명확하게 유지된다 */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+
+/* body = 박스영역 */
+body { 
+    padding: 50px 0px 50px 0px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup_background{
+    /* 위오아왼_ 아래 경우 저절로 정렬되므로 반영필요 x */
+    padding: 50px 100px 0px 100px;
+    height: 800px;
+    width: 550px;
+    left: 625px;
+    top: 60px;
+    border-radius: 20px;
+
+    /* 박스 그림자 */
+    border: 1px solid #AACDFF;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+}
+
+.content__up {
+    color:#797979;
+    font-size: 12px;
+}
+
+.content__down{
+    /* 가운데정렬 */
+    text-align:center;
+
+}
+
+
+h2 {
+    letter-spacing:-1.6px;
+    margin-top: 22px;
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 15px;
+    color: #0068FF;
+}
+
+.radius {
+    border: none;
+    margin-top: 20px;
+
+}
+
+/* redio 선택란 크기, 색 바꾸기 */
+input[type='radio'] {
+    font-size: 22px;
+    margin-top: 25px;
+
+    -webkit-appearance:none;
+    width:15px;
+    height:15px;
+    border:1px solid #D2D2D2;
+     border-radius:50%;
+    outline:none;
+    background:#EBEBEB;
+  }
+
+.sel {
+    font-size: 13px;
+}
+
+.check {
+    margin-top: 9px;
+    font-size: 10px;
+
+    
+}
+
+
+
+button {
+    margin-top: 8px;
+    width: 350px;
+    height: 65px;
+    left: 725px;
+    top: 875px;
+
+    background: #FFFFFF;
+    border: 1px solid #3b84f0;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: 'Noto Sans CJK KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    
+    text-align: center;
+    
+    color: #0068FF;
+}

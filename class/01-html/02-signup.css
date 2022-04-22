@@ -1,0 +1,20 @@
+/* 브라우저 화면 - 배경 */
+body{
+    background-color: bisque;
+}
+
+h2 {
+    color:blueviolet;
+}
+
+hr {
+    background-color: #222222;
+}
+
+/* radius class 선택자 활용 */
+/* border: 박스 테두리 컬러 변경 -모든 css 박스설정 관리 */
+/* 모서리 동글 */
+.radius{
+    border: 1px solid red;
+    border-radius: 10px;
+}

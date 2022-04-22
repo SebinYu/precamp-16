@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <!-- href="./" 자동으로 같은 파일 내에 존재하는 확장자 불러오기 -->
+    <!-- rel -relation -->
+    <link href="./02-signup.css" rel ="stylesheet">
+</head>
+<body>
+    <h2>회원가입</h2>
+    <input class="radius" type ="text" placeholder="이메일을 입력해주세요"><br><br>
+    <input class="radius" type ="text" placeholder="이름을 입력해주세요"><br><br>
+    <input class="radius" type ="password" placeholder="비밀번호를 입력해주세요"><br><br>
+    <input class="radius" type ="password" placeholder="비밀번호를 다시 입력해주세요"><br><br>
+
+    <!-- 선택박스 -->
+    <!-- disabled="true" 선택불가 설정 -->
+    <!-- ed로 끝나는 명령어는 ="true"를 기입하지 않아도 됨-> 더욱 깔끔 -->
+    <!-- 컨트롤/시프트 tap으로 들여쓰기 조절 -->
+    <select>
+        <option disabled selected>지역을 선택해주세요</option>
+        <option>서울</option>
+        <option>경기</option>
+        <option>인천</option>
+    </select>
+    <br><br>
+
+    <!-- name="gender" 을통해 그룹으로 묶기 -> 중복 선택안되게끔 설정 -->
+    <input type="radio" name="gender"> 여성
+    <input type="radio" name="gender"> 남성
+    <br><br>
+    <input type="checkbox"> 이용약관 어쩌구에 동의합니다
+    <hr> 
+    <!-- hr: 수평선 -->
+
+    <!-- ctrl + ? -> 주석처리 -->
+    <!-- 두가지의 차이: 볼드처리같은 눈에보이는 추가기능 넣기 여부 -->
+    <button><b>가입하기</b></button>
+    <!-- <input type = "button" value="가입하기"> -->
+    <!-- 버튼은 요즘 인풋태그 대신에 버튼태그 자체로 많이 사용한다 -->
+    
+</body>
+</html>

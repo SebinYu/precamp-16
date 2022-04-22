@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.background {
+    width: 1024px;
+    height: 600px;
+    padding: 20px 0px 0px 20px;
+    /* 박스 위치 조정 */
+    background-image: url("../images/background.png");
+}
+
+.outerbox {
+    width: 808px;
+    height: 544px;
+    background-image: url("../images/outerbox.png");
+
+}
+
+.wrapper {
+    padding: 32px 0px 0px 32px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* 왼쪽영역 */
+
+.wrapper__left{
+    width: 208px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3px;
+    margin-right: 7px;
+
+}
+
+.wrapper__left__header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    
+    color: #55B2D4;
+    padding: 0px 0px 10px 0px;
+
+}
+
+.today {
+    padding-top: 10px;
+    font-size: 9px;
+
+}
+
+.zero {
+    font-size: 11px;
+}
+
+.count {
+    font-size: 11px;
+}
+
+.wrapper__left__body {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 0px 30px;
+}
+
+.left__body__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left__body__header__gray{
+    width: 148px;
+    height: 133px;
+    background: #C4C4C4;
+}
+
+.left__body__header__line{
+    width: 100%;
+    border-top: 1px dotted black;
+    /* 점으로 된 구분선 */
+    margin: 12px 0px;
+    
+}
+
+.left__body__profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 12px;
+}
+
+.font {
+    color: #999999;
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    padding: 0px 0px 0px 10px;
+
+
+}
+
+.left__body__footer{
+    color: #999999;
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 30px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 20px 0px;
+    
+
+}
+
+.wrapper__right{
+    width: 524px;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 15px;
+
+    
+}
+
+.wrapper__right__header {
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 14px;
+    align-items: flex-end;
+}
+
+.wrapper__right__body {
+    width: 515px;
+    height: 472px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 9px;
+}
+
+.right__header__title, .right__header__setting {
+    color: #55B2D4;
+}
+
+.right__header__title{
+    color:black;
+}
+
+
+.banner {
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #55B2D4;
+    /* 특정 폰트 적용
+    head에 Use on the web의 링크 전체를 복붙
+    css가 적용되어야하는 클래스에 CSS rules to specify families안에 있는 것
+    중 **font-family 하나만** 복붙한다
+    */
+    font-family: 'Black Han Sans', sans-serif;
+
+
+
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0px 0px 38px;
+
+}
+
+.private {
+    margin-bottom: 5px;
+    font-family: 'PFStardust';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #55B2D4;
+
+    
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 10px 0px 0px;
+
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* 네비게이션 전체 범위 지정 */
+.navigation {
+    width: 62px;
+    height: 100px;
+    /* position: absolute;을 선언시 margin 없이 현재위치에서 위치조정가능 */
+    position: absolute;
+    top: 110px;
+    left: 786px;
+
+    /* 인덱스 사이 세로정렬, 간격 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 네비게이션 각 각 아이템 설정 */
+.navigation__item {
+    width: 60px;
+    height: 30px;
+    background-color: #298EB5;
+    border: 1px solid black;
+    color: white;
+    font-size: 10px;
+    /* 문자 위치 정렬 */
+    /* line-height를 통해 문자열의 세로 위치 조정가능 */
+    text-align: center;
+    line-height: 30px;
+    /* border-radius: 상좌 상우 하우 하좌 */
+    border-radius: 0px 10px 10px 0px;
+    /* 인덱스에 마우스 올릴시, 손가락모양으로 커서가 변경 */
+    cursor: pointer;
+
+
+}

@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html, body {
+    padding: 3px 12px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.contents__title{
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    
+    color: #55B2D4;
+}
+
+.subtitle {
+    font-family: 'Sci Fied Bitmap';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 8px;
+    /* identical to box height */
+
+    text-align: justify;
+    letter-spacing: -0.08em;
+
+    color: #000000;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.album__box__img1 {
+    width: 120px;
+    height: 120px;
+    left: 312px;
+    top: 153px;
+    margin: 20px 20px 8px 20px;
+    padding: 20px 0px 0px 20px;
+    /* 박스 위치 조정 */
+    background-image: url("../images/jukebox-01.png");
+}
+
+.album__box__img2 {
+    width: 120px;
+    height: 120px;
+    left: 312px;
+    top: 153px;
+    margin: 20px 20px 8px 20px;
+    padding: 20px 0px 0px 20px;
+    /* 박스 위치 조정 */
+    background-image: url("../images/jukebox-02.png");
+}
+
+.album__box__img3 {
+    width: 120px;
+    height: 120px;
+    left: 312px;
+    top: 153px;
+    margin: 20px 20px 8px 20px;
+    padding: 20px 0px 0px 20px;
+    /* 박스 위치 조정 */
+    background-image: url("../images/jukebox-03.png");
+}
+
+.music__name{
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #0F465E;
+
+}
+
+.music__writter{
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    margin-top: 5px;
+    color: #999999;
+
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+input {
+    text-align: center;
+    
+}
+
+.number{
+
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5px;
+    line-height: 13px;
+    
+    color: #000000;}
+
+
+.music__title {
+    text-align: start;
+    
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 13px;
+
+    color: #1b7094;
+}
+
+.artist {
+    text-align: start;
+
+    
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 13px;
+
+    color: #1b7094;
+
+}
+
+
+table {
+    margin-top: 10px;
+    
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+
+    border-bottom: 1px dashed #999999;
+    padding: 1.3px;
+}
+
+
+thead {
+
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+    padding: 1.5px;
+
+    font-family: 'Malgun Gothic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    padding: none;
+    background-color: #EEEEEE;
+    color: #999999;
+}
+
+
+.music__title__index {
+    text-align: start;
+}
+
+.artist__index {
+    text-align: start;
+}
